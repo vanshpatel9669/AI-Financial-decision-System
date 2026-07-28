@@ -1,0 +1,82 @@
+[
+  {
+    "algorithm": "ppo",
+    "reward_mode": "return_minus_drawdown",
+    "timesteps": 100000,
+    "train_elapsed_s": 53.49,
+    "eval_episode_count": 30,
+    "action_distribution": {
+      "defensive": 0.866,
+      "balanced": 0.029,
+      "growth": 0.105
+    },
+    "metrics": {
+      "episode_count": 30,
+      "mean_cumulative_return": 0.00412166597630825,
+      "std_cumulative_return": 0.03412665571988893,
+      "mean_max_drawdown": 0.03472777542245604,
+      "mean_sharpe_ratio": 0.6028331270721259,
+      "stability_win_rate": 0.7
+    }
+  },
+  {
+    "algorithm": "ppo",
+    "reward_mode": "risk_adjusted",
+    "timesteps": 100000,
+    "train_elapsed_s": 54.01,
+    "eval_episode_count": 30,
+    "action_distribution": {
+      "defensive": 0.024,
+      "balanced": 0.552,
+      "growth": 0.424
+    },
+    "metrics": {
+      "episode_count": 30,
+      "mean_cumulative_return": 0.005819028602369444,
+      "std_cumulative_return": 0.06818304651850382,
+      "mean_max_drawdown": 0.07919591935437081,
+      "mean_sharpe_ratio": 0.11011191392015302,
+      "stability_win_rate": 0.4666666666666667
+    }
+  },
+  {
+    "algorithm": "dqn",
+    "reward_mode": "return_minus_drawdown",
+    "timesteps": 100000,
+    "train_elapsed_s": 41.78,
+    "eval_episode_count": 30,
+    "action_distribution": {
+      "defensive": 0.193,
+      "balanced": 0.786,
+      "growth": 0.021
+    },
+    "metrics": {
+      "episode_count": 30,
+      "mean_cumulative_return": 0.005192155089900907,
+      "std_cumulative_return": 0.04512255422287068,
+      "mean_max_drawdown": 0.055187239106848675,
+      "mean_sharpe_ratio": 0.2031372268299276,
+      "stability_win_rate": 0.5333333333333333
+    }
+  },
+  {
+    "algorithm": "dqn",
+    "reward_mode": "risk_adjusted",
+    "timesteps": 100000,
+    "train_elapsed_s": 42.58,
+    "eval_episode_count": 30,
+    "action_distribution": {
+      "defensive": 0.964,
+      "balanced": 0.024,
+      "growth": 0.012
+    },
+    "metrics": {
+      "episode_count": 30,
+      "mean_cumulative_return": 0.0036029111230868826,
+      "std_cumulative_return": 0.017047787684003744,
+      "mean_max_drawdown": 0.02234663276386523,
+      "mean_sharpe_ratio": 0.46149958704063415,
+      "stability_win_rate": 0.5666666666666667
+    }
+  }
+]
