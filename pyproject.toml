@@ -15,9 +15,15 @@ dependencies = [
     "uvicorn[standard]>=0.30",
     "pydantic>=2.7",
     "pydantic-settings>=2.3",
-    "gymnasium>=0.29",
-    "stable-baselines3>=2.3",
-    "torch>=2.2",
+    # gymnasium/stable-baselines3/torch are pinned exactly, not floor-bound:
+    # models/*.zip and *_vecnormalize.pkl are binary artifacts produced by
+    # these exact versions, and stable-baselines3 does not guarantee
+    # load-time compatibility across its own minor versions. An unpinned
+    # `>=` here would let CI or a fresh install silently resolve a newer
+    # trio than what the committed model was trained/serialized with.
+    "gymnasium==1.0.0",
+    "stable-baselines3==2.4.1",
+    "torch==2.2.2",
     "numpy>=1.26",
     "pandas>=2.2",
     "structlog>=24.1",
