@@ -21,7 +21,7 @@ dependencies = [
     # load-time compatibility across its own minor versions. An unpinned
     # `>=` here would let CI or a fresh install silently resolve a newer
     # trio than what the committed model was trained/serialized with.
-    "gymnasium==1.0.0",
+    "gymnasium==1.3.0",
     "stable-baselines3==2.4.1",
     "torch==2.2.2",
     "numpy>=1.26",
