@@ -22,7 +22,7 @@ dependencies = [
     # `>=` here would let CI or a fresh install silently resolve a newer
     # trio than what the committed model was trained/serialized with.
     "gymnasium==1.0.0",
-    "stable-baselines3==2.4.1",
+    "stable-baselines3==2.9.0",
     "torch==2.2.2",
     "numpy>=1.26",
     "pandas>=2.2",
